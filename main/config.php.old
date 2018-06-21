@@ -1,0 +1,20 @@
+<?php
+$servername = "hyperspeed.it";
+$username = "matteo";
+$password = "Pexe8eVb";
+$dbname = "amazonpricetracker";
+
+$access_key = "AKIAJMCKR66RDFXSYI4A";
+$secret_key = "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";
+$associative_tag = "giradait-21";
+
+require_once('functions.php');
+$settings = loadSettings($servername, $username, $password, $dbname);
+$pages = $settings['pagesToScan'];
+$activeServer = $settings['activeServers'];
+$ServerName = "Main";
+$refMainTag = $settings['associateId'];
+
+/*$access_key = "AKIAIOEG62TVE6EJ5UZA";
+$secret_key = "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";*/
+?>
